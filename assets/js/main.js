@@ -19,44 +19,58 @@ var studente = {
     lastName : "De rossi",
     age:  25,
 }
-
 for (var prop in studente) {
     console.log(studente[prop]);
 } 
 
 var studenti = [
-    {
+    studente = {
     firstName : "Alessio",
     lastName : "De Marco",
     age:  25
 },
-    {
+    studente = {
     firstName : "Matteo",
     lastName : "Rossi",
     age:  26
 },
-    {
+    studente = {
     firstName : "Mario",
     lastName : "Bianchi",
     age:  28
 },
-    {
+    studente = {
     firstName : "Luigi",
     lastName : "Neri",
     age:  25
 },
-    {
+    studente = {
     firstName : "Fabrizio",
     lastName : "De Andrè",
     age:  30
 }
 ]
 
-//console.log(studenti);
-for (var prop in studenti) {
-    console.log(studenti[prop].firstName, studenti[prop].lastName);
-} 
+// for (var key in studenti) {
+//     console.log(studenti[key]);
+
+// } 
 
 var name = prompt("Inserisci nome");
 var surname = prompt("Inserisci cognome");
 var age = prompt("Inserisci età");
+var studente2 = {
+    firstName : prompt("Inserisci nome"),
+    lastName : prompt("Inserisci cognome"),
+    age:  Number(prompt("Inserisci età")),
+}
+
+studenti.push(studente2);
+
+for (var key in studenti) {
+     document.getElementById("paragrafo").innerHTML += key + ": " + studente.firstName + " " + studente.lastName + "<br>";
+    // for (var key in studente) {
+    //  //console.log(studenti[key]);
+    // document.getElementById("paragrafo").innerHTML += ": " + studente.firstName + "<br>";
+//}
+} 
