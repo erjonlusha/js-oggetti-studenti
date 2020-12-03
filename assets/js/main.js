@@ -56,9 +56,9 @@ var studenti = [
 
 // } 
 
-var name = prompt("Inserisci nome");
-var surname = prompt("Inserisci cognome");
-var age = prompt("Inserisci età");
+// var name = prompt("Inserisci nome");
+// var surname = prompt("Inserisci cognome");
+// var age = prompt("Inserisci età");
 var studente2 = {
     firstName : prompt("Inserisci nome"),
     lastName : prompt("Inserisci cognome"),
